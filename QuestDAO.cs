@@ -89,7 +89,7 @@ namespace QuestKeep
             return true;
         }
 
-        static void Main(String[] args)
+        static void MainTest(String[] args)
         {
             Debug.Assert(QuestDB.TestConnect());
             Debug.Assert(QuestDB.InsureSchema());
