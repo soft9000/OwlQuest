@@ -10,23 +10,28 @@
         <Menu>
             <MenuItem Header="Files">
                 <MenuItem Header="New ..." Click="OnNew"/>
-                <MenuItem Header="Open ..."/>
-                <MenuItem Header="Save As ..."/>
-                <MenuItem Header="Sharing">
-                    <MenuItem Header="Copy"/>
-                    <MenuItem Header="Paste"/>
-                </MenuItem>
+                <MenuItem Header="Open ..." Click="OnOpen"/>
+                <MenuItem Header="Save As ..." Click="OnSaveAs"/>
             </MenuItem>
             <MenuItem Header="Testing">
-                <MenuItem Header="Start Random"/>
-                <MenuItem Header="Start Ordered"/>
+                <MenuItem Header="Start Random" Click="OnTestRandom"/>
+                <MenuItem Header="Start Ordered"  Click="OnTestOrdered"/>
+                <MenuItem Header="Questions">
+                    <MenuItem Header="Copy" Click="OnCopy"/>
+                    <MenuItem Header="Paste" Click="OnPaste"/>
+                </MenuItem>
+                <MenuItem Header="Metrics" Click="OnTestMetrics"/>
             </MenuItem>
-            <MenuItem Header="Report">
-                <MenuItem Header="Database"/>
-                <MenuItem Header="Metrics"/>
+            <MenuItem Header="Admin">
+                <MenuItem Header="File Report" Click="OnFileReport"/>
+                <MenuItem Header="Data">
+                    <MenuItem Header="Dump ..." Click="OnDump"/>
+                    <MenuItem Header="Merge ..." Click="OnDumpMerge"/>
+                    <MenuItem Header="Restore ..." Click="OnDumpRestore"/>
+                </MenuItem>
             </MenuItem>
             <MenuItem Header="Help">
-                <MenuItem Header="About ..."/>
+                <MenuItem Header="About ..." Click="OnAbout"/>
             </MenuItem>
 
         </Menu>
