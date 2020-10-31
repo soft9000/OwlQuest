@@ -12,17 +12,17 @@ using System.Diagnostics;
 
 namespace QuestKeep
 {
-    class QuestDAO
+    public class QuestDAO
     {
 
     }
 
-    class QuestQuery
+    public class QuestQuery
     {
 
     }
 
-    class QuestDB
+    public class QuestDB
     {
         static String zdb = "QuestKeep001.bin";
 
@@ -37,6 +37,7 @@ namespace QuestKeep
             }
             catch (Exception ex)
             {
+                Console.Out.WriteLine(ex.Message);
                 return null;
             }
         }
@@ -73,7 +74,7 @@ namespace QuestKeep
             return true;
         }
 
-        static bool TestConnect()
+        public static bool TestConnect()
         {
             SQLiteCommand cmd = GetCmd();
             if (cmd == null)
@@ -89,7 +90,7 @@ namespace QuestKeep
             return true;
         }
 
-        static void MainTest(String[] args)
+        public static void MainTest(String[] args)
         {
             Debug.Assert(QuestDB.TestConnect());
             Debug.Assert(QuestDB.InsureSchema());

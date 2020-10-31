@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuestKeepTesting", "QuestKeepTesting.csproj", "{6254547A-BD6C-4530-8332-D1169F994B3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuestKeep", "QuestKeep.csproj", "{6254547A-BD6C-4530-8332-D1169F994B3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

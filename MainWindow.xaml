@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QuestKeep"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="OwlQuest .001" Height="450" Width="800">
     <Grid>
+        <Menu>
+            <MenuItem Header="Files">
+                <MenuItem Header="New ..." Click="OnNew"/>
+                <MenuItem Header="Open ..."/>
+                <MenuItem Header="Save As ..."/>
+                <MenuItem Header="Sharing">
+                    <MenuItem Header="Copy"/>
+                    <MenuItem Header="Paste"/>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Testing">
+                <MenuItem Header="Start Random"/>
+                <MenuItem Header="Start Ordered"/>
+            </MenuItem>
+            <MenuItem Header="Report">
+                <MenuItem Header="Database"/>
+                <MenuItem Header="Metrics"/>
+            </MenuItem>
+            <MenuItem Header="Help">
+                <MenuItem Header="About ..."/>
+            </MenuItem>
+
+        </Menu>
 
     </Grid>
 </Window>

@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using QuestKeep;
+
 namespace QuestKeep
 {
     /// <summary>
@@ -23,6 +25,11 @@ namespace QuestKeep
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void OnNew(object sender, RoutedEventArgs e)
+        {
+            QuestKeep.QuestDB.MainTest(null);
         }
     }
 }
